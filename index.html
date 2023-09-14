@@ -1,61 +1,192 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta cha rset="utf-8" />
-    <title>ARK's Personal Site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARK || CV</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+
+    body,
+    form,
+    input,
+    label {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    header {
+      text-align: center;
+      padding: 8px 0;
+    }
+
+    header a {
+      padding: 0.5rem;
+    }
+
+    section {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      min-height: 350px;
+    }
+
+    section#edu,
+    #skills {
+      text-align: left;
+      flex-direction: column;
+    }
+
+    img {
+      border-radius: 1rem;
+    }
+
+    div {
+      max-width: 550px;
+    }
+
+    table {
+      text-align: left;
+      width: 60%;
+    }
+
+    section#skills img {
+      width: 85px;
+      margin-right: 32px;
+      border-radius: 0;
+      filter: saturate(70%);
+    }
+
+    form label {
+      /* width: 100%; */
+      display: block;
+      margin-top: 1.25rem;
+    }
+
+    form input {
+      width: 100%;
+      padding: 8px;
+    }
+  </style>
 </head>
 
 <body>
-    <img src="img/MyPicture.jpg" alt="ARK Profile Picture" style="border-radius: 1em; width:128px; height:128px;">
-    <h1>Abdul Rehman Khan</h1>
-    <p><em> <strong> Web Developer Developer</strong> in the Making</em></p>
-    <p>I am a Computer Sciecne Student. I like to code. And create new and abstract Design</p>
-    <hr size="1px">
+  <header>
+    <nav>
+      <a href="#">Home</a>|
+      <a href="#">About</a>|
+      <a href="#">Education</a>|
+      <a href="#">Skills</a>|
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <center>
+        <h1>Front-End Developer</h1>
+        <p>Hello There! 👋</p>
+        <p>I am ARK a <strong>Front-End Web Developer</strong> I love to design and create exciting new projects. </p>
+        <p>I am skilled in <em><strong>HTML, CSS, JavaScript, React, Python, Java, C, C++, PHP</strong></em></p>
+      </center>
+    </section>
+    <section id="about">
+      <div>
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit labore consequatur saepe! Porro pariatur
+          numquam doloribus <i>corrupti doloremque vel ratione voluptas corporis.</i> Blanditiis minus <b>sequi ipsam
+            inventore perferendis.</b></p>
 
-    <h3>Education</h3>
-    <ul>
-        <li>USMS, Bhitshah</li>
-        <li>Govt: High School, Berani</li>
-        <li>Bahria Foundation College, Tando Adam</li>
-        <li>Al-Saeed Islamic School, Tando Adam</li>
-        <li>PakTurk International School, Hyderabad</li>
-        <li>English Medium Model School, Sanghar</li>
-        <li>Sir Syed Govt: High School, Tando Adam</li>
-        <li>Dr. Ziauddin Govt: Primary School, Tando Adam</li>
-    </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit labore consequatur saepe! Porro pariatur
+          <strong><em>numquam doloribus corrupti doloremque vel ratione voluptas corporis.</em></strong> Blanditiis
+          minus sequi ipsam inventore perferendis, doloremque architecto ipsum cupiditate culpa.
+        </p>
 
-    <hr>
-
-    <h3>Hobbies</h3>
-    <ol type="1">
-        <li><a href="https://github.com/Codewith-ARK/">Coding</a></li>
-        <li><a href="https://sabe.io/">Reading about Technology</a></li>
-        <li><a href="#">Watching YouTube videos</a></li>
-    </ol>
-    <hr>
-    
-    
-    <h3>Skills</h3>
-    <table cellspacing="10">
-        <tr>
-            <td>HTML ⭐⭐⭐⭐</td>
-            <td>CSS ⭐⭐⭐⭐</td>
-        </tr>
-        <tr>
-            <td>C ⭐⭐⭐</td>
-            <td>Python ⭐</td>
-        </tr>
-        <tr>
-            <td>Java ⭐⭐⭐</td>
-            <td>Photography ⭐⭐⭐⭐</td>
-        </tr>
-    </table>
-    
-    <hr>
-
-    <h3><a href="1.2 Contact Me.html">Contact Me</a></h3>
-    <a href="HTML Intro.html">HTML Intro</a>
+        <h2>My Hobbies</h2>
+        
+        <ul>
+          <li>Lorem, ipsum dolor.</li>  
+          <li>Lorem, ipsum dolor.</li>  
+          <li>Lorem, ipsum dolor.</li>  
+          <li>Lorem, ipsum dolor.</li>  
+          <li>Lorem, ipsum dolor.</li>  
+        </ul>
+      </div>
+      <img src="https://picsum.photos/200/300" alt="my profile">
+    </section>
+    <section id="edu">
+      <h2>Education</h2>
+      <div style="width: 80%;">
+        <table>
+          <thead>
+            <tr>
+              <th>Education Type</th>
+              <th>Institute</th>
+              <th>Grade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bachelor's Degree</td>
+              <td>Example University</td>
+              <td>A</td>
+            </tr>
+            <tr>
+              <td>High School Diploma</td>
+              <td>Sample High School</td>
+              <td>B+</td>
+            </tr>
+            <tr>
+              <td>Master's Degree</td>
+              <td>Testing Institute</td>
+              <td>A-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div>
+        <marquee behavior="scroll" direction="left">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="python logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png" alt="php logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png" alt="javascript logo">
+          <img src="https://www.cdnlogo.com/logos/h/84/html.svg" alt="html logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png" alt="css logo">
+        </marquee>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="#" method="post" id="contact-form">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="contact-number">Contact Number:</label>
+          <input type="tel" id="contact-number" name="contact-number" pattern="[0-9]{10}" placeholder="1234567890" required>
+          <small>Enter a 10-digit number without spaces or dashes.</small>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="date">Appointment Date:</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div>
+          <label for="time">Appointment Time:</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+        <div>
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </section>
+  </main>
 </body>
 
 </html>
