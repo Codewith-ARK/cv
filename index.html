@@ -4,14 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ARK || CV</title>
+  <title>Project Demo</title>
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
 
-    html {
-      scroll-behavior: smooth;
-    }
     body,
     form,
     input,
@@ -71,17 +68,29 @@
       width: 100%;
       padding: 8px;
     }
+    footer p {
+      text-align: center;
+    }
+    .banner {
+      padding: 4px 8px;
+      text-align: center;
+      margin: 0 auto;
+      font-size: small;
+      background-color: #eee;
+    }
   </style>
 </head>
 
 <body>
   <header>
     <nav>
-      <a href="#home">Home</a>|
-      <a href="#about">About</a>|
-      <a href="#edu">Education</a>|
-      <a href="#skills">Skills</a>|
-      <a href="#contact">Contact</a>
+      <a href="#">Home</a>|
+      <a href="#">About</a>|
+      <a href="#">Education</a>|
+      <a href="#">Skills</a>|
+      <a href="#">Contact</a>|
+      <a href="checklist.html">Checklist</a>
+
     </nav>
   </header>
   <main>
@@ -164,24 +173,24 @@
       <h2>Contact Me</h2>
       <form action="#" method="post" id="contact-form">
         <div>
-          <label for="name">Name:</label>
+          <label for="name"><strong>Name:</strong></label>
           <input type="text" id="name" name="name" required>
         </div>
         <div>
-          <label for="contact-number">Contact Number:</label>
+          <label for="contact-number"><strong>Contact Number:</strong></label>
           <input type="tel" id="contact-number" name="contact-number" pattern="[0-9]{10}" placeholder="1234567890" required>
-          <small>Enter a 10-digit number without spaces or dashes.</small>
+          <small><i>Enter a 10-digit number without spaces or dashes.</i></small>
         </div>
         <div>
-          <label for="email">Email:</label>
+          <label for="email"><strong>Email:</strong></label>
           <input type="email" id="email" name="email" required>
         </div>
         <div>
-          <label for="date">Appointment Date:</label>
+          <label for="date"><strong>Appointment Date:</strong></label>
           <input type="date" id="date" name="date" required>
         </div>
         <div>
-          <label for="time">Appointment Time:</label>
+          <label for="time"><strong>Appointment Time:</strong></label>
           <input type="time" id="time" name="time" required>
         </div>
         <div>
@@ -190,6 +199,9 @@
       </form>
     </section>
   </main>
+  <footer>
+    <p>Copyright &copy; 2023 Your Name</p>
+  </footer>
 </body>
 
 </html>
